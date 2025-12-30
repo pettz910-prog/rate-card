@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Zap, CheckCircle, Clock, Award, Shield, TrendingUp, Users, Code, DollarSign, FileText, Mail, MessageSquare, Info, ArrowRight, Sparkles, Globe, Database, CreditCard, Lock, BarChart, Phone, Star } from 'lucide-react';
 
 export default function ClientRateCard() {
-  const [activeTier] = useState('professional');
-  const [expandedPackage, setExpandedPackage] = useState(null);
+  const [expandedPackage, setExpandedPackage] = useState<number | null>(null);
 
   const whatsappNumber = "254704544323";
   
-  const createWhatsAppLink = (packageName, price, isCustom = false) => {
+  const createWhatsAppLink = (packageName: string, price: number, isCustom = false) => {
+
     if (isCustom) {
       const message = encodeURIComponent("Hi Janet Marketing! I'd like to discuss a custom web solution for my business. Can we talk?");
       return `https://wa.me/${whatsappNumber}?text=${message}`;
