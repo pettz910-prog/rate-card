@@ -838,7 +838,7 @@ export default function ClientRateCard() {
           </div>
 
           <div className="mt-6 sm:mt-8 md:mt-10 text-xs sm:text-sm text-white/70 leading-relaxed px-4">
-            Built with ❤️ in Kenya | Java Spring Boot + React.js | Trusted by 100+ businesses
+            Built with in Kenya | Java Spring Boot + React.js | Trusted by 100+ businesses
           </div>
         </div>
       </div>
